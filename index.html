@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#241813" />
+
+  <title data-i18n="meta.title">De Norte a Sur · Cocina española y rumana · Paterna, Valencia</title>
+  <meta name="description" data-i18n="meta.description" content="Café y cocina española y rumana en el corazón de Paterna. Almuerzos, tapas, hamburguesas y desayunos en un ambiente cálido y mediterráneo." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="De Norte a Sur · Cocina española y rumana" />
+  <meta property="og:description" content="Café, almuerzos y tapas en Paterna, Valencia. Cocina española y rumana en un ambiente cálido y mediterráneo." />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta property="og:url" content="https://denorteasur.example/" />
+  <meta property="og:site_name" content="De Norte a Sur" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="De Norte a Sur" />
+  <meta name="twitter:description" content="Cocina española y rumana en Paterna, Valencia." />
+  <meta name="twitter:image" content="assets/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/favicon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- LocalBusiness / Restaurant structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "De Norte a Sur",
+    "image": "assets/og-image.jpg",
+    "description": "Café y cocina española y rumana en Paterna, Valencia. Almuerzos, tapas, hamburguesas y desayunos.",
+    "servesCuisine": ["Spanish", "Romanian", "Mediterranean"],
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carrer dels Pins, 2",
+      "addressLocality": "Paterna",
+      "addressRegion": "Valencia",
+      "postalCode": "46980",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.5028,
+      "longitude": -0.4407
+    },
+    "telephone": "+34 605 692 359",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:30", "closes": "23:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "23:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "16:00" }
+    ],
+    "url": "https://denorteasur.example/",
+    "sameAs": [
+      "https://wa.me/34605692359"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido</a>
+
+  <!-- ───────── Header ───────── -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="De Norte a Sur — inicio">
+        <img class="brand-logo" src="assets/logo-de-norte-a-sur-transparent.png" alt="Logotipo de De Norte a Sur" data-i18n-alt="brand.alt" width="506" height="402" decoding="async">
+        <span class="brand-sub" data-i18n="brand.sub">Cocina española y rumana</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about" data-i18n="nav.about">Nosotros</a></li>
+          <li><a href="#menu" data-i18n="nav.menu">Carta</a></li>
+          <li><a href="#gallery" data-i18n="nav.gallery">Fotos</a></li>
+          <li><a href="#location" data-i18n="nav.location">Dónde estamos</a></li>
+          <li><a href="#hours" data-i18n="nav.hours">Horario</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ───────── Hero ───────── -->
+    <section class="hero" id="top">
+      <div class="hero-media" aria-hidden="true">
+        <div class="hero-photo"></div>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <nav class="hero-chips" aria-label="Quick links">
+          <a class="hero-chip" href="#gallery"><span data-i18n="chip.photo">Foto</span></a>
+          <a class="hero-chip" href="#menu"><span data-i18n="chip.menu">Carta</span></a>
+          <a class="hero-chip" href="#location"><span data-i18n="chip.warm">Visítanos</span></a>
+        </nav>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Paterna · Valencia · desde 2025</p>
+        <h1 class="hero-title">
+          <span class="line line-1" data-i18n="hero.title1">De Norte</span>
+          <span class="line line-2"><em data-i18n="hero.title2">a Sur</em></span>
+        </h1>
+        <p class="hero-lede" data-i18n="hero.lede">Un café de barrio donde el almuerzo valenciano se sienta a la mesa con los sabores del este de Europa. Tostadas, tapas, mici y un cortado bien tirado.</p>
+
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#menu" data-i18n="cta.menu">Ver carta</a>
+          <a class="btn btn-ghost" href="#location" data-i18n="cta.directions">Cómo llegar</a>
+          <a class="btn btn-outline" href="#contact" data-i18n="cta.book">Reservar mesa</a>
+        </div>
+
+        <ul class="hero-strip" aria-label="Quick facts">
+          <li>
+            <span class="hs-k" data-i18n="strip.opens">Abierto hoy</span>
+            <span class="hs-v">07:30 — 23:00</span>
+          </li>
+          <li>
+            <span class="hs-k" data-i18n="strip.cafe">Cafés</span>
+            <span class="hs-v">1,20 €</span>
+          </li>
+          <li>
+            <span class="hs-k" data-i18n="strip.promo">Promo del día</span>
+            <span class="hs-v" data-i18n="strip.promoVal">2 tercios + tapa · 7 €</span>
+          </li>
+        </ul>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about">
+        <span class="cue-line"></span>
+        <span class="cue-text" data-i18n="hero.scroll">Sigue bajando</span>
+      </a>
+    </section>
+
+    <!-- ───────── About ───────── -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow" data-i18n="about.eyebrow">Nosotros</p>
+          <h2 class="section-title" data-i18n="about.title">Una mesa larga entre el Mediterráneo y los Cárpatos.</h2>
+          <div class="about-body">
+            <p data-i18n="about.p1">De Norte a Sur nació con una idea sencilla: que el desayuno valenciano y la comida rumana pudieran compartir la misma barra sin pedir permiso. Aquí el día empieza con tostada de tomate y café, sigue con bravas y termina con <em>mici</em>, choricitos a la cerveza y una caña fresca.</p>
+            <p data-i18n="about.p2">Cocinamos con producto cercano, recetas de casa y cariño suficiente para que cada mesa, sea de almuerzo rápido o sobremesa larga, se sienta como una invitación.</p>
+          </div>
+
+          <ul class="about-pillars">
+            <li>
+              <span class="pillar-num">01</span>
+              <h3 data-i18n="about.p01t">Cocina honesta</h3>
+              <p data-i18n="about.p01b">Recetas tradicionales españolas y rumanas, sin atajos.</p>
+            </li>
+            <li>
+              <span class="pillar-num">02</span>
+              <h3 data-i18n="about.p02t">Café diario</h3>
+              <p data-i18n="about.p02b">Todos los cafés a 1,20 € de lunes a viernes hasta las 09:00.</p>
+            </li>
+            <li>
+              <span class="pillar-num">03</span>
+              <h3 data-i18n="about.p03t">Barrio</h3>
+              <p data-i18n="about.p03b">Un sitio de Paterna para vecinos, oficinistas y curiosos.</p>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="about-media" aria-hidden="true">
+          <div class="about-photo about-photo-a">
+            <div class="placeholder-tag">Photo · tostada con tomate</div>
+          </div>
+          <div class="about-photo about-photo-b">
+            <div class="placeholder-tag">Photo · mici a la brasa</div>
+          </div>
+          <div class="about-quote">
+            <span class="quote-mark">“</span>
+            <p data-i18n="about.quote">El bocadillo de calamares más serio de Paterna, y un café que vale lo que cuesta.</p>
+            <cite data-i18n="about.quoteCite">— Vecino habitual</cite>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────── Menu ───────── -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="menu.eyebrow">Nuestra carta</p>
+          <h2 class="section-title" data-i18n="menu.title">Para picar, para almorzar, para quedarse.</h2>
+          <p class="section-lede" data-i18n="menu.lede">Carta vigente. Los nombres tradicionales se mantienen en español; debajo encontrarás la nota en inglés cuando hace falta.</p>
+        </header>
+
+        <nav class="menu-tabs" aria-label="Menu categories" id="menuTabs">
+          <button class="mt-btn is-active" data-target="cat-desayunos" data-i18n="cat.desayunos">Desayunos</button>
+          <button class="mt-btn" data-target="cat-almuerzos" data-i18n="cat.almuerzos">Almuerzos</button>
+          <button class="mt-btn" data-target="cat-tapas-clasicas" data-i18n="cat.tapasC">Tapas clásicas</button>
+          <button class="mt-btn" data-target="cat-tapas-especiales" data-i18n="cat.tapasE">Tapas especiales</button>
+          <button class="mt-btn" data-target="cat-rumania" data-i18n="cat.rumania">Platos de Rumanía</button>
+          <button class="mt-btn" data-target="cat-hamburguesas" data-i18n="cat.burgers">Hamburguesas</button>
+          <button class="mt-btn" data-target="cat-cafes" data-i18n="cat.cafes">Cafés</button>
+          <button class="mt-btn" data-target="cat-bebidas" data-i18n="cat.bebidas">Bebidas</button>
+        </nav>
+
+        <!-- Desayunos -->
+        <article class="menu-cat" id="cat-desayunos">
+          <header class="cat-head">
+            <h3 data-i18n="cat.desayunos">Desayunos</h3>
+            <p class="cat-note" data-i18n="cat.desayunos.note">Café + tostada. Servido toda la mañana.</p>
+          </header>
+          <ul class="dish-list">
+            <li class="dish"><div class="dish-row"><span class="dish-name">Tostadas de aceite y sal</span><span class="dish-dots"></span><span class="dish-price">2,50 €</span></div><p class="dish-desc" data-i18n="dish.tost.sal">Olive oil and sea salt on toasted country bread.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Tostadas de tomate y aceite</span><span class="dish-dots"></span><span class="dish-price">2,80 €</span></div><p class="dish-desc" data-i18n="dish.tost.tom">Grated tomato &amp; olive oil — the Valencian morning standard.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Tostadas de tomate y jamón</span><span class="dish-dots"></span><span class="dish-price">3,50 €</span></div><p class="dish-desc" data-i18n="dish.tost.jam">Tomato toast topped with cured Spanish ham.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Tostadas de tomate y atún</span><span class="dish-dots"></span><span class="dish-price">3,50 €</span></div><p class="dish-desc" data-i18n="dish.tost.atun">Tomato toast with tuna in olive oil.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Tostadas de tomate y queso</span><span class="dish-dots"></span><span class="dish-price">3,50 €</span></div><p class="dish-desc" data-i18n="dish.tost.queso">Tomato toast with melted cheese.</p></li>
+          </ul>
+        </article>
+
+        <!-- Almuerzos -->
+        <article class="menu-cat" id="cat-almuerzos" hidden>
+          <header class="cat-head">
+            <h3 data-i18n="cat.almuerzos">Almuerzos</h3>
+            <p class="cat-note" data-i18n="cat.almuerzos.note">Bocadillo + bebida + café. Máximo 3 ingredientes en los populares.</p>
+          </header>
+
+          <div class="dish-split">
+            <div class="dish-col">
+              <h4 class="col-h" data-i18n="cat.alm.pop">Populares · 6,50 €</h4>
+              <ul class="dish-list dense">
+                <li class="dish"><div class="dish-row"><span class="dish-name">Bocadillo a elegir</span><span class="dish-dots"></span><span class="dish-price">6,50 €</span></div><p class="dish-desc" data-i18n="dish.alm.pop">Sandwich + drink + coffee. Up to 3 fillings.</p></li>
+              </ul>
+            </div>
+            <div class="dish-col">
+              <h4 class="col-h" data-i18n="cat.alm.esp">Especiales · 7,50 €</h4>
+              <ul class="dish-list dense">
+                <li class="dish"><div class="dish-row"><span class="dish-name">Chivito</span><span class="dish-dots"></span><span class="dish-price">7,50 €</span></div><p class="dish-desc" data-i18n="dish.chivito">Stacked steak sandwich with the works.</p></li>
+                <li class="dish"><div class="dish-row"><span class="dish-name">Brascada</span><span class="dish-dots"></span><span class="dish-price">7,50 €</span></div><p class="dish-desc" data-i18n="dish.brascada">Slow-cooked beef sandwich.</p></li>
+                <li class="dish"><div class="dish-row"><span class="dish-name">Calamares</span><span class="dish-dots"></span><span class="dish-price">7,50 €</span></div><p class="dish-desc" data-i18n="dish.calamares">Fried squid sandwich — Spanish classic.</p></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="promo-card">
+            <div class="promo-tag" data-i18n="promo.tag">Promoción especial</div>
+            <div class="promo-body">
+              <p class="promo-title" data-i18n="promo.title">2 tercios + tapa de bravas</p>
+              <p class="promo-sub" data-i18n="promo.sub">Two 33cl beers and a side of patatas bravas.</p>
+            </div>
+            <div class="promo-price">7,00 €</div>
+          </div>
+        </article>
+
+        <!-- Tapas clásicas -->
+        <article class="menu-cat" id="cat-tapas-clasicas" hidden>
+          <header class="cat-head">
+            <h3 data-i18n="cat.tapasC">Tapas clásicas</h3>
+            <p class="cat-note" data-i18n="cat.tapasC.note">El recetario de siempre, para compartir.</p>
+          </header>
+          <ul class="dish-list two-col">
+            <li class="dish"><div class="dish-row"><span class="dish-name">Bravas</span><span class="dish-dots"></span><span class="dish-price">5,50 €</span></div><p class="dish-desc" data-i18n="dish.bravas">Fried potatoes, spicy bravas sauce.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Morro</span><span class="dish-dots"></span><span class="dish-price">6,00 €</span></div><p class="dish-desc" data-i18n="dish.morro">Crispy pork snout, a Spanish bar staple.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Calamares</span><span class="dish-dots"></span><span class="dish-price">8,50 €</span></div><p class="dish-desc" data-i18n="dish.calam">Fried squid rings, lemon.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Oreja</span><span class="dish-dots"></span><span class="dish-price">8,50 €</span></div><p class="dish-desc" data-i18n="dish.oreja">Braised pork ear, paprika.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Ajoarriero</span><span class="dish-dots"></span><span class="dish-price">8,50 €</span></div><p class="dish-desc" data-i18n="dish.ajo">Cod, potato &amp; garlic emulsion.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Ensaladilla rusa</span><span class="dish-dots"></span><span class="dish-price">8,50 €</span></div><p class="dish-desc" data-i18n="dish.ensa">Spanish potato salad with tuna.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Gambas al ajillo</span><span class="dish-dots"></span><span class="dish-price">7,00 €</span></div><p class="dish-desc" data-i18n="dish.gambas">Prawns sizzled in garlic oil.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Boquerones en vinagre</span><span class="dish-dots"></span><span class="dish-price">9,00 €</span></div><p class="dish-desc" data-i18n="dish.boq">Marinated anchovies in vinegar.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Croquetas de jamón</span><span class="dish-dots"></span><span class="dish-price">7,00 €</span></div><p class="dish-desc" data-i18n="dish.croq.j">5 ham croquettes.</p></li>
+          </ul>
+        </article>
+
+        <!-- Tapas especiales -->
+        <article class="menu-cat" id="cat-tapas-especiales" hidden>
+          <header class="cat-head">
+            <h3 data-i18n="cat.tapasE">Tapas especiales</h3>
+            <p class="cat-note" data-i18n="cat.tapasE.note">Para compartir, repetir y discutir.</p>
+          </header>
+          <ul class="dish-list two-col">
+            <li class="dish"><div class="dish-row"><span class="dish-name">Jalapeños (6 ud.)</span><span class="dish-dots"></span><span class="dish-price">7,00 €</span></div><p class="dish-desc" data-i18n="dish.jala">Cheese-stuffed jalapeños, breaded &amp; fried.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Tequeños (5 ud.)</span><span class="dish-dots"></span><span class="dish-price">7,00 €</span></div><p class="dish-desc" data-i18n="dish.teq">Crispy cheese sticks.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Torrezno</span><span class="dish-dots"></span><span class="dish-price">8,50 €</span></div><p class="dish-desc" data-i18n="dish.torrezno">Slow-cooked, crackling pork belly.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Tellinas</span><span class="dish-dots"></span><span class="dish-price">12,00 €</span></div><p class="dish-desc" data-i18n="dish.tellinas">Tiny Mediterranean clams in garlic.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Sepia a la plancha</span><span class="dish-dots"></span><span class="dish-price">12,00 €</span></div><p class="dish-desc" data-i18n="dish.sepia">Grilled cuttlefish, parsley &amp; lemon.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Nuggets con patatas</span><span class="dish-dots"></span><span class="dish-price">6,00 €</span></div><p class="dish-desc" data-i18n="dish.nugg">Chicken nuggets &amp; fries.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Tacos con patatas (2 ud.)</span><span class="dish-dots"></span><span class="dish-price">8,00 €</span></div><p class="dish-desc" data-i18n="dish.tacos">Beef, pepper &amp; melted cheese tacos.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Quesadillas (2 ud.)</span><span class="dish-dots"></span><span class="dish-price">8,00 €</span></div><p class="dish-desc" data-i18n="dish.quesa">Grilled chicken &amp; melted cheese.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Croquetas rabo de toro</span><span class="dish-dots"></span><span class="dish-price">7,00 €</span></div><p class="dish-desc" data-i18n="dish.croq.r">5 oxtail croquettes.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Alitas de pollo</span><span class="dish-dots"></span><span class="dish-price">7,00 €</span></div><p class="dish-desc" data-i18n="dish.alitas">5 chicken wings with fries.</p></li>
+          </ul>
+        </article>
+
+        <!-- Rumanía -->
+        <article class="menu-cat" id="cat-rumania" hidden>
+          <header class="cat-head">
+            <h3 data-i18n="cat.rumania">Platos de Rumanía</h3>
+            <p class="cat-note" data-i18n="cat.rumania.note">La barra del este. Para descubrir o reencontrar.</p>
+          </header>
+          <ul class="dish-list two-col">
+            <li class="dish"><div class="dish-row"><span class="dish-name">Mici (ud.)</span><span class="dish-dots"></span><span class="dish-price">1,50 €</span></div><p class="dish-desc" data-i18n="dish.mici">Grilled Romanian skinless sausages — order a handful.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Choricitos de cerveza</span><span class="dish-dots"></span><span class="dish-price">3,50 €</span></div><p class="dish-desc" data-i18n="dish.cho.b">Small chorizos simmered in beer.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Choricitos de mostaza</span><span class="dish-dots"></span><span class="dish-price">3,50 €</span></div><p class="dish-desc" data-i18n="dish.cho.m">Small chorizos in mustard glaze.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Chorizo con patatas (ud.)</span><span class="dish-dots"></span><span class="dish-price">4,50 €</span></div><p class="dish-desc" data-i18n="dish.cho.p">Chorizo served with fried potatoes.</p></li>
+          </ul>
+        </article>
+
+        <!-- Hamburguesas -->
+        <article class="menu-cat" id="cat-hamburguesas" hidden>
+          <header class="cat-head">
+            <h3 data-i18n="cat.burgers">Hamburguesas</h3>
+            <p class="cat-note" data-i18n="cat.burgers.note">Acompañadas de patatas.</p>
+          </header>
+          <ul class="dish-list two-col">
+            <li class="dish"><div class="dish-row"><span class="dish-name">Simple Burguer</span><span class="dish-dots"></span><span class="dish-price">4,50 €</span></div><p class="dish-desc" data-i18n="dish.simple">Beef patty &amp; cheese. Served with fries.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Maxi Burguer</span><span class="dish-dots"></span><span class="dish-price">7,00 €</span></div><p class="dish-desc" data-i18n="dish.maxi">Beef, cheese, bacon, egg, caramelized onion, tomato &amp; lettuce. Served with fries.</p></li>
+          </ul>
+        </article>
+
+        <!-- Cafés -->
+        <article class="menu-cat" id="cat-cafes" hidden>
+          <header class="cat-head">
+            <h3 data-i18n="cat.cafes">Cafés</h3>
+            <p class="cat-note" data-i18n="cat.cafes.note">Todos los cafés a 1,20 € de lunes a viernes hasta las 09:00.</p>
+          </header>
+          <ul class="dish-list two-col">
+            <li class="dish"><div class="dish-row"><span class="dish-name">Café solo</span><span class="dish-dots"></span><span class="dish-price">1,20 €</span></div><p class="dish-desc" data-i18n="dish.solo">Single espresso.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Cortado</span><span class="dish-dots"></span><span class="dish-price">1,40 €</span></div><p class="dish-desc" data-i18n="dish.cortado">Espresso cut with a dash of milk.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Carajillo</span><span class="dish-dots"></span><span class="dish-price">1,70 €</span></div><p class="dish-desc" data-i18n="dish.carajillo">Espresso with a shot of liquor.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Cremaet</span><span class="dish-dots"></span><span class="dish-price">2,00 €</span></div><p class="dish-desc" data-i18n="dish.cremaet">Valencian flamed coffee with rum &amp; cinnamon.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Bombón</span><span class="dish-dots"></span><span class="dish-price">1,50 €</span></div><p class="dish-desc" data-i18n="dish.bombon">Espresso layered with sweetened condensed milk.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Café con leche</span><span class="dish-dots"></span><span class="dish-price">1,70 €</span></div><p class="dish-desc" data-i18n="dish.cleche">Espresso with hot milk.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Americano</span><span class="dish-dots"></span><span class="dish-price">1,40 €</span></div><p class="dish-desc" data-i18n="dish.americano">Espresso lengthened with hot water.</p></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Suplemento del tiempo</span><span class="dish-dots"></span><span class="dish-price">0,20 €</span></div><p class="dish-desc" data-i18n="dish.suple">Terrace surcharge.</p></li>
+          </ul>
+        </article>
+
+        <!-- Bebidas -->
+        <article class="menu-cat" id="cat-bebidas" hidden>
+          <header class="cat-head">
+            <h3 data-i18n="cat.bebidas">Bebidas</h3>
+            <p class="cat-note" data-i18n="cat.bebidas.note">Refrescos, cervezas, vinos y licores.</p>
+          </header>
+          <ul class="dish-list two-col">
+            <li class="dish"><div class="dish-row"><span class="dish-name">Agua pequeña</span><span class="dish-dots"></span><span class="dish-price">1,00 €</span></div></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Agua grande</span><span class="dish-dots"></span><span class="dish-price">1,50 €</span></div></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Refrescos</span><span class="dish-dots"></span><span class="dish-price">1,80 €</span></div></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Caña (Estrella Galicia)</span><span class="dish-dots"></span><span class="dish-price">1,80 €</span></div></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Doble (Estrella Galicia)</span><span class="dish-dots"></span><span class="dish-price">2,20 €</span></div></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Jarra (Estrella Galicia)</span><span class="dish-dots"></span><span class="dish-price">3,10 €</span></div></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Caña (E.G. 1906)</span><span class="dish-dots"></span><span class="dish-price">2,00 €</span></div></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Doble (E.G. 1906)</span><span class="dish-dots"></span><span class="dish-price">2,60 €</span></div></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Jarra (E.G. 1906)</span><span class="dish-dots"></span><span class="dish-price">3,40 €</span></div></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Tercios</span><span class="dish-dots"></span><span class="dish-price" data-i18n="from">desde 1,90 €</span></div></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Chupitos</span><span class="dish-dots"></span><span class="dish-price" data-i18n="from2">desde 1,70 €</span></div></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Cubatas</span><span class="dish-dots"></span><span class="dish-price" data-i18n="from3">desde 6,00 €</span></div></li>
+            <li class="dish"><div class="dish-row"><span class="dish-name">Copa de vino</span><span class="dish-dots"></span><span class="dish-price">3,00 €</span></div></li>
+          </ul>
+        </article>
+
+        <p class="allergens-note">
+          <strong data-i18n="allergens.title">Alérgenos:</strong>
+          <span data-i18n="allergens.body">consulta la tabla de alérgenos disponible en el local. Si tienes alguna intolerancia, dínoslo al pedir.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ───────── Gallery / Fotos ───────── -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="gallery.eyebrow">De la cocina</p>
+          <h2 class="section-title" data-i18n="gallery.title">Fotos</h2>
+          <p class="section-lede" data-i18n="gallery.lede">Imágenes de nuestra carta. Tap a una para verla en grande.</p>
+        </header>
+
+        <ul class="gallery-grid">
+          <li class="g-item">
+            <figure>
+              <img src="assets/gallery/bocadillo-calamares.jpg" loading="lazy" decoding="async" width="1200" height="900" alt="Bocadillo de calamares" data-i18n-alt="gal.boc.alt">
+              <figcaption><span class="g-name" data-i18n="gal.boc.name">Bocadillo de calamares</span><span class="g-sub" data-i18n="gal.boc.sub">Almuerzo especial</span></figcaption>
+            </figure>
+          </li>
+          <li class="g-item">
+            <figure>
+              <img src="assets/gallery/patatas-bravas.jpg" loading="lazy" decoding="async" width="1200" height="900" alt="Patatas bravas con salsa" data-i18n-alt="gal.brav.alt">
+              <figcaption><span class="g-name" data-i18n="gal.brav.name">Patatas bravas</span><span class="g-sub" data-i18n="gal.brav.sub">Tapa clásica</span></figcaption>
+            </figure>
+          </li>
+          <li class="g-item">
+            <figure>
+              <img src="assets/gallery/mici-mostaza.jpg" loading="lazy" decoding="async" width="1200" height="900" alt="Mici rumanos con mostaza" data-i18n-alt="gal.mici1.alt">
+              <figcaption><span class="g-name" data-i18n="gal.mici1.name">Mici con mostaza</span><span class="g-sub" data-i18n="gal.mici1.sub">Cocina rumana</span></figcaption>
+            </figure>
+          </li>
+          <li class="g-item">
+            <figure>
+              <img src="assets/gallery/calamares-fritos.jpg" loading="lazy" decoding="async" width="1200" height="900" alt="Aros de calamar fritos" data-i18n-alt="gal.calam.alt">
+              <figcaption><span class="g-name" data-i18n="gal.calam.name">Calamares fritos</span><span class="g-sub" data-i18n="gal.calam.sub">Tapa clásica</span></figcaption>
+            </figure>
+          </li>
+          <li class="g-item">
+            <figure>
+              <img src="assets/gallery/mici-patatas.jpg" loading="lazy" decoding="async" width="1200" height="900" alt="Plato de mici con patatas fritas" data-i18n-alt="gal.mici2.alt">
+              <figcaption><span class="g-name" data-i18n="gal.mici2.name">Mici con patatas</span><span class="g-sub" data-i18n="gal.mici2.sub">Plato de Rumanía</span></figcaption>
+            </figure>
+          </li>
+          <li class="g-item">
+            <figure>
+              <img src="assets/gallery/maxi-burger.jpg" loading="lazy" decoding="async" width="1200" height="900" alt="Maxi Burguer con bacon y huevo" data-i18n-alt="gal.maxi.alt">
+              <figcaption><span class="g-name" data-i18n="gal.maxi.name">Maxi Burguer</span><span class="g-sub" data-i18n="gal.maxi.sub">Hamburguesas</span></figcaption>
+            </figure>
+          </li>
+          <li class="g-item">
+            <figure>
+              <img src="assets/gallery/tostada-jamon.jpg" loading="lazy" decoding="async" width="1200" height="900" alt="Tostada de pan con jamón" data-i18n-alt="gal.tost.alt">
+              <figcaption><span class="g-name" data-i18n="gal.tost.name">Tostada de jamón</span><span class="g-sub" data-i18n="gal.tost.sub">Desayunos</span></figcaption>
+            </figure>
+          </li>
+          <li class="g-item">
+            <figure>
+              <img src="assets/gallery/cafe.jpg" loading="lazy" decoding="async" width="1200" height="900" alt="Café con leche con arte latte" data-i18n-alt="gal.cafe.alt">
+              <figcaption><span class="g-name" data-i18n="gal.cafe.name">Café</span><span class="g-sub" data-i18n="gal.cafe.sub">Todos los cafés 1,20 €</span></figcaption>
+            </figure>
+          </li>
+          <li class="g-item">
+            <figure>
+              <img src="assets/gallery/cerveza-mahou.jpg" loading="lazy" decoding="async" width="1200" height="900" alt="Cerveza Mahou Cinco Estrellas" data-i18n-alt="gal.mahou.alt">
+              <figcaption><span class="g-name" data-i18n="gal.mahou.name">Mahou</span><span class="g-sub" data-i18n="gal.mahou.sub">Bebidas</span></figcaption>
+            </figure>
+          </li>
+          <li class="g-item">
+            <figure>
+              <img src="assets/gallery/cerveza-aguila.jpg" loading="lazy" decoding="async" width="1200" height="900" alt="Cerveza El Águila Dorada" data-i18n-alt="gal.aguila.alt">
+              <figcaption><span class="g-name" data-i18n="gal.aguila.name">El Águila</span><span class="g-sub" data-i18n="gal.aguila.sub">Bebidas</span></figcaption>
+            </figure>
+          </li>
+        </ul>
+
+        <p class="gallery-note" data-i18n="gallery.note">Imágenes orientativas. La presentación puede variar según disponibilidad.</p>
+      </div>
+    </section>
+
+    <!-- ───────── Lightbox ───────── -->
+    <div class="lightbox" id="lightbox" hidden aria-hidden="true" aria-modal="true" role="dialog">
+      <button type="button" class="lb-close" aria-label="Cerrar">&times;</button>
+      <button type="button" class="lb-prev" aria-label="Anterior">&larr;</button>
+      <button type="button" class="lb-next" aria-label="Siguiente">&rarr;</button>
+      <figure class="lb-figure">
+        <img class="lb-img" alt="">
+        <figcaption class="lb-cap"></figcaption>
+      </figure>
+    </div>
+
+    <!-- ───────── Location ───────── -->
+    <section class="section location" id="location">
+      <div class="container loc-grid">
+        <div class="loc-copy">
+          <p class="eyebrow" data-i18n="loc.eyebrow">Dónde estamos</p>
+          <h2 class="section-title" data-i18n="loc.title">En el centro de Paterna, a un paso del metro.</h2>
+
+          <address class="loc-address">
+            <span class="loc-line">Carrer dels Pins, 2</span>
+            <span class="loc-line">46980 Paterna</span>
+            <span class="loc-line">Valencia · España</span>
+          </address>
+
+          <div class="loc-actions">
+            <a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Carrer+dels+Pins+2+46980+Paterna+Valencia" data-i18n="loc.directions">Cómo llegar</a>
+            <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Carrer+dels+Pins+2+46980+Paterna+Valencia" data-i18n="loc.open">Abrir en Google Maps</a>
+          </div>
+
+          <dl class="loc-meta">
+            <div><dt data-i18n="loc.transport">Transporte</dt><dd data-i18n="loc.transport.v">Metrovalencia L1 / L2 — La Canyada</dd></div>
+            <div><dt data-i18n="loc.parking">Aparcamiento</dt><dd data-i18n="loc.parking.v">Zona azul en la misma calle</dd></div>
+            <div><dt data-i18n="loc.access">Accesibilidad</dt><dd data-i18n="loc.access.v">Acceso a pie de calle</dd></div>
+          </dl>
+        </div>
+
+        <div class="loc-map" aria-label="Map">
+          <iframe
+            title="Mapa De Norte a Sur"
+            src="https://www.google.com/maps?q=Carrer+dels+Pins+2+46980+Paterna+Valencia&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+          <a class="map-pin" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Carrer+dels+Pins+2+46980+Paterna+Valencia">
+            <span class="pin-dot"></span>
+            <span class="pin-label">De Norte a Sur</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── Hours ───────── -->
+    <section class="section hours" id="hours">
+      <div class="container hours-grid">
+        <div class="hours-copy">
+          <p class="eyebrow" data-i18n="hours.eyebrow">Horario</p>
+          <h2 class="section-title" data-i18n="hours.title">Abrimos temprano. Cerramos cuando se acaba la sobremesa.</h2>
+          <p class="section-lede" data-i18n="hours.lede">Servimos desayuno desde las 7:30. La cocina cierra una hora antes del cierre.</p>
+          <p class="placeholder-pill" data-i18n="hours.placeholder">Horario orientativo — confírmanos cierres o festivos por WhatsApp.</p>
+        </div>
+
+        <table class="hours-table" aria-label="Opening hours">
+          <tbody>
+            <tr><th scope="row" data-i18n="day.mon">Lunes</th><td>07:30 — 23:00</td></tr>
+            <tr><th scope="row" data-i18n="day.tue">Martes</th><td>07:30 — 23:00</td></tr>
+            <tr><th scope="row" data-i18n="day.wed">Miércoles</th><td>07:30 — 23:00</td></tr>
+            <tr><th scope="row" data-i18n="day.thu">Jueves</th><td>07:30 — 23:00</td></tr>
+            <tr><th scope="row" data-i18n="day.fri">Viernes</th><td>07:30 — 23:00</td></tr>
+            <tr><th scope="row" data-i18n="day.sat">Sábado</th><td>09:00 — 23:30</td></tr>
+            <tr><th scope="row" data-i18n="day.sun">Domingo</th><td>09:00 — 16:00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ───────── Contact ───────── -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <header class="section-head center">
+          <p class="eyebrow" data-i18n="ct.eyebrow">Contacto</p>
+          <h2 class="section-title" data-i18n="ct.title">Reserva, pregunta o pásate sin avisar.</h2>
+          <p class="section-lede" data-i18n="ct.lede">Las reservas se confirman por teléfono o WhatsApp. Para grupos grandes, escríbenos con un par de días de antelación.</p>
+        </header>
+
+        <div class="contact-grid contact-grid-2">
+          <a class="contact-card" href="tel:+34605692359">
+            <span class="cc-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"></path></svg>
+            </span>
+            <span class="cc-k" data-i18n="ct.phone">Teléfono</span>
+            <span class="cc-v">+34 605 692 359</span>
+          </a>
+
+          <a class="contact-card" target="_blank" rel="noopener" href="https://wa.me/34605692359">
+            <span class="cc-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.83 7.32L3 20l1.18-5.17A8.5 8.5 0 1 1 21 11.5z"></path><path d="M8 10c.5 2 2 3.5 4 4l1.5-1c.4-.3 1-.3 1.4 0L16 14"></path></svg>
+            </span>
+            <span class="cc-k">WhatsApp</span>
+            <span class="cc-v">+34 605 692 359</span>
+          </a>
+        </div>
+
+        <div class="reserve-cta">
+          <div>
+            <p class="rc-eye" data-i18n="ct.reserveEye">Reservar mesa</p>
+            <p class="rc-title" data-i18n="ct.reserveTitle">¿Mesa para esta noche?</p>
+          </div>
+          <div class="rc-actions">
+            <a class="btn btn-primary" href="https://wa.me/34605692359?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20De%20Norte%20a%20Sur" target="_blank" rel="noopener" data-i18n="ct.whatsapp">Reservar por WhatsApp</a>
+            <a class="btn btn-ghost" href="tel:+34605692359" data-i18n="ct.call">Llámanos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ───────── Footer ───────── -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <img class="f-logo" src="assets/logo-de-norte-a-sur-light.png" alt="Logotipo de De Norte a Sur" data-i18n-alt="brand.alt" width="506" height="402" decoding="async">
+        <p class="f-desc" data-i18n="footer.desc">Café, almuerzos y tapas en Paterna. Cocina española y rumana servida con calma desde la mañana hasta la noche.</p>
+      </div>
+
+      <div class="f-col">
+        <h4 data-i18n="footer.visit">Visítanos</h4>
+        <p>Carrer dels Pins, 2</p>
+        <p>46980 Paterna · Valencia</p>
+        <p>España</p>
+      </div>
+
+      <div class="f-col">
+        <h4 data-i18n="footer.contact">Contacto</h4>
+        <p><a href="tel:+34605692359">+34 605 692 359</a></p>
+        <p><a href="https://wa.me/34605692359" target="_blank" rel="noopener">WhatsApp</a></p>
+      </div>
+
+      <div class="f-col">
+        <h4 data-i18n="footer.lang">Idioma</h4>
+        <div class="lang-switch f-lang" role="group" aria-label="Language">
+          <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">Español</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">English</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container f-bottom">
+      <p>© <span id="year">2026</span> De Norte a Sur. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+      <p class="f-credits" data-i18n="footer.built">Sitio estático · HTML, CSS y JS. Imágenes de muestra como placeholders.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
