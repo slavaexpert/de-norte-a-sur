@@ -1,1 +1,8 @@
+# Static site — no build step needed.
+# This file is provided so editors / hosts that auto-detect Node projects
+# don't get confused. There is nothing to install.
+
+node_modules/
 .DS_Store
+.vercel
+.netlify
